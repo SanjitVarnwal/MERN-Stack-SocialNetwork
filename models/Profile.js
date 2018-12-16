@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const ProfileSchema = new Schema({
     user: {
         type: Schema.Types.ObjectId,
-        ref: 'users'
+        ref: 'Users'
     },
     handle: {
         type: String,
@@ -32,7 +32,7 @@ const ProfileSchema = new Schema({
     bio: {
         type: String,
     },
-    githubUserName: {
+    githubusername: {
         type: String
     },
     experience: [{
@@ -99,9 +99,6 @@ const ProfileSchema = new Schema({
             type: String
         },
         facebook: {
-            type: String
-        },
-        github: {
             type: String
         },
         linkedin: {
